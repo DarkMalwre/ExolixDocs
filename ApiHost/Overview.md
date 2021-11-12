@@ -3,7 +3,8 @@ The `ApiHost` class can be constructed to create fast, and efficient API servers
 Let's start by creating a basic server
 
 ```cs
-using Exolix.ApiHost
+using Exolix.ApiHost;
+using Exolix.Json;
 using System;
 
 namespace ApiHostTest {
@@ -37,3 +38,18 @@ namespace ApiHostTest {
 		}
 	}
 }
+```
+
+# How it Works
+First, we are importing a few different components from Exolix and also System to that we can log messages
+```cs 
+using Exolix.ApiHost;
+using Exolix.Json;
+```
+
+Next, we construct our API server, as you can see, we have also passed a class for settings
+```
+ApiHost api = new ApiHost(new ApiHostSettings {
+	Port = 8080
+});
+```
