@@ -9,7 +9,7 @@
 | `Port`        | `int?`                | `null`    | Server port, use null for no port                    |
 | `Host`        | `string`              | `0.0.0.0` | Server hostname without port                         |
 | `Certificate` | `ApiHostCertificate?` | `null`    | API SSL certificate information, use null for no SSL |
-| `PeerAuth`
+| `PeerNodes`    | [`ApiPeerNode`[]](./ApiPeerNode.md)
 
 ```cs
 public class ApiHostSettings
