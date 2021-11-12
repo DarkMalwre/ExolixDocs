@@ -48,8 +48,28 @@ using Exolix.Json;
 ```
 
 Next, we construct our API server, as you can see, we have also passed a class for settings
-```
+```cs
 ApiHost api = new ApiHost(new ApiHostSettings {
 	Port = 8080
 });
+```
+
+Then, we add even listeners
+```cs
+api.OnReady(() => {
+	Console.WriteLine($" [ Server ] Listening at \"{api.ListeningAddress}\"");
+
+	api.OnOpen((connection) => {
+		Console.WriteLine($" [ Server ] New connection opened");
+
+		connection.OnMessage("log:console", (rawMessage) => {
+			ServerLogMessage message = JsonHandler.Parse<ServerLogMessage>(rawMessage);
+		});
+	});
+});
+```
+
+Finaly, we start the server
+```
+api.Run();
 ```
