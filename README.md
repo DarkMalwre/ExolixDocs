@@ -51,7 +51,7 @@ class Program
 }
 ```
 
-### Adding a OnReady() event
+### Adding an OnReady() event
 Now, when you have your server created, you can add an OnReady() event. It will fire once the ApiHost server is ready!
 
 Arguments:
@@ -78,7 +78,7 @@ class Program
 }
 ```
 
-### Adding a OnOpen() event to the server
+### Adding an OnOpen() event to the server
 Since you have the OnReady() event setup, you can now put some events in there! Here there is an example for the OnOpen() event. This event will automatically fire when a connection is made to your server.
 
 Argumetns:
@@ -111,7 +111,7 @@ class Program
 }
 ```
 
-### Adding a OnClose() event to the server
+### Adding an OnClose() event to the server
 The OnClose() event will be put into the OnOpen() event, so make sure you have the OnOpen() event setup correctly. This event will fire, once the connection closes or breaks.
 
 Arguments:
