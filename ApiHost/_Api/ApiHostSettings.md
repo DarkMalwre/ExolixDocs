@@ -22,5 +22,5 @@ public class ApiHostSettings
 	}
  ```
 
-<!-- Exolix-Docs-End -->
-[Next (ApiHostCertificate)] ('./ApiHostCertificate.md')
+<!-- Axeri Document-End -->
+[Next (ApiHostCertificate)](./ApiHostCertificate.md)
