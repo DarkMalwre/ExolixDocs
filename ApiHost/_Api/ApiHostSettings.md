@@ -21,3 +21,6 @@ public class ApiHostSettings
 		public List<ApiPeerNode>? PeerNodes = null;
 	}
  ```
+
+<!-- Exolix-Docs-End -->
+[Next (ApiHostCertificate)] ('./ApiHostCertificate.md')
