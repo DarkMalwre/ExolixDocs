@@ -21,3 +21,6 @@ public class ApiHostSettings
 		public List<ApiPeerNode>? PeerNodes = null;
 	}
  ```
+
+<!-- Axeri Document-End -->
+[Next (ApiHostCertificate)](./ApiHostCertificate.md)
